@@ -35,6 +35,10 @@ namespace Stack_and_Queue
             queue.Enqueu(30);
             queue.Enqueu(70);
             queue.Traverse();
+            queue.Dequeu();
+            queue.Traverse();
+            queue.Dequeu();
+            queue.Traverse();
         }
     }
 }
