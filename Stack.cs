@@ -26,7 +26,7 @@ namespace Stack_and_Queue
         /// </summary>
         public Stack()
         {
-            linkedList = new LinkedList<T>();
+            this.linkedList = new LinkedList<T>();
         }
 
         /// <summary>
@@ -35,7 +35,7 @@ namespace Stack_and_Queue
         /// <param name="data">The data.</param>
         public void Push(T data)
         {
-            linkedList.PushFront(data);
+            this.linkedList.PushFront(data);
         }
 
         /// <summary>
@@ -43,7 +43,24 @@ namespace Stack_and_Queue
         /// </summary>
         public void Traverse()
         {
-            linkedList.Traverse();
+            this.linkedList.Traverse();
+        }
+
+        /// <summary>
+        /// Peeks this instance.
+        /// </summary>
+        /// <returns>T Generic type</returns>
+        public T Peak()
+        {
+            return this.linkedList.head.data;
+        }
+
+        /// <summary>
+        /// Pops this instance.
+        /// </summary>
+        public void Pop()
+        {
+            this.linkedList.PopFront();
         }
     }
 }

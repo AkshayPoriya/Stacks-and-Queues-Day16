@@ -22,7 +22,11 @@ namespace Stack_and_Queue
             Stack<int> stack = new Stack<int>();
             stack.Push(70);
             stack.Push(30);
+            Console.WriteLine("Peak value: " + stack.Peak());
             stack.Push(56);
+            stack.Traverse();
+            stack.Pop();
+            Console.WriteLine("Stack after pop operation: ");
             stack.Traverse();
         }
     }
