@@ -28,6 +28,13 @@ namespace Stack_and_Queue
             stack.Pop();
             Console.WriteLine("Stack after pop operation: ");
             stack.Traverse();
+
+            Console.WriteLine("*******Queue********");
+            Queue<int> queue = new Queue<int>();
+            queue.Enqueu(56);
+            queue.Enqueu(30);
+            queue.Enqueu(70);
+            queue.Traverse();
         }
     }
 }
