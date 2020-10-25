@@ -41,5 +41,13 @@ namespace Stack_and_Queue
         {
             this.linkedList.Traverse();
         }
+
+        /// <summary>
+        /// Dequeus this instance.
+        /// </summary>
+        public void Dequeu()
+        {
+            linkedList.PopFront();
+        }
     }
 }
